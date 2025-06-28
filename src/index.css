@@ -7,13 +7,13 @@ html, body {
   transform: scaleX(0.85);
   transform-origin: center;
   text-align: center;
-  line-height: 1.4;
+  line-height: 1;
 }
 
 div#root {
   height: 100vh;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   max-width: 1280px;
   display: flex;
   flex-direction: column;
@@ -36,28 +36,5 @@ button.active {
 }
 
 div#card {
-  font-size: 100px;
+  font-size: 90px;
 }
-
-/* :root {
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-  font-stretch: condensed;
-  transform: scaleX(0.85);
-  transform-origin: center;
-  line-height: 1.4;
-  display: flex;
-  flex: 1 1 auto;
-  height: 100vh;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-*/
