@@ -1,0 +1,63 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-stretch: condensed;
+  transform: scaleX(0.85);
+  transform-origin: center;
+  text-align: center;
+  line-height: 1.4;
+}
+
+div#root {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  border: none;
+  font-family: inherit;
+  font-weight: normal;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 30px;
+} 
+
+button.active {
+  font-weight: bold;
+}
+
+div#card {
+  font-size: 100px;
+}
+
+/* :root {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-stretch: condensed;
+  transform: scaleX(0.85);
+  transform-origin: center;
+  line-height: 1.4;
+  display: flex;
+  flex: 1 1 auto;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+*/
