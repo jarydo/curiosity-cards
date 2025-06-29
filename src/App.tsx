@@ -41,7 +41,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="category-container">
         <button
           className={`category-btn ${category === "creation" ? "active" : ""}`}
           onClick={() => switchCategory("creation")}
