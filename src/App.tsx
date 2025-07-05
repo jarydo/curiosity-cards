@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import cardData from "./data.json";
 import type { CategoryType } from "./types";
+import "./index.css";
 
 function App() {
-  const [category, setCategory] = useState<CategoryType>("creation");
+  const [category, setCategory] = useState<CategoryType>("conversation");
   const [usedCards, setUsedCards] = useState<Set<number>>(new Set());
   const [currentCard, setCurrentCard] = useState<string>("");
 
@@ -40,14 +41,8 @@ function App() {
   }, [category]);
 
   return (
-    <>
+    <div id="curiosity-cards">
       <div className="category-container">
-        <button
-          className={`category-btn ${category === "creation" ? "active" : ""}`}
-          onClick={() => switchCategory("creation")}
-        >
-          {category === "creation" ? "< CREATION >" : "( CREATION )"}
-        </button>
         <button
           className={`category-btn ${
             category === "conversation" ? "active" : ""
@@ -66,10 +61,16 @@ function App() {
         >
           {category === "connection" ? "< CONNECTION >" : "( CONNECTION )"}
         </button>
+        <button
+          className={`category-btn ${category === "creation" ? "active" : ""}`}
+          onClick={() => switchCategory("creation")}
+        >
+          {category === "creation" ? "< CREATION >" : "( CREATION )"}
+        </button>
       </div>
       <div id="card">{currentCard}</div>
       <button onClick={() => drawCard()}>( NEW CARD )</button>
-    </>
+    </div>
   );
 }
 
